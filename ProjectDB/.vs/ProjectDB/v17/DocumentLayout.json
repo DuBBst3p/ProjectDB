@@ -1,12 +1,71 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\project_DB\\ProjectDB\\ProjectDB\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\alexi\\OneDrive\\Documente\\GitHub\\ProjectDB\\ProjectDB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexi\\OneDrive\\Documente\\GitHub\\ProjectDB\\ProjectDB\\Views\\Home\\stiri.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Home\\stiri.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexi\\OneDrive\\Documente\\GitHub\\ProjectDB\\ProjectDB\\Views\\Home\\proiecte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Home\\proiecte.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alexi\\OneDrive\\Documente\\GitHub\\ProjectDB\\ProjectDB\\Views\\Home\\servicii.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Home\\servicii.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "stiri.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documente\\GitHub\\ProjectDB\\ProjectDB\\Views\\Home\\stiri.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\stiri.cshtml",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documente\\GitHub\\ProjectDB\\ProjectDB\\Views\\Home\\stiri.cshtml",
+              "RelativeToolTip": "Views\\Home\\stiri.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T17:48:59.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "proiecte.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documente\\GitHub\\ProjectDB\\ProjectDB\\Views\\Home\\proiecte.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\proiecte.cshtml",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documente\\GitHub\\ProjectDB\\ProjectDB\\Views\\Home\\proiecte.cshtml",
+              "RelativeToolTip": "Views\\Home\\proiecte.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAswFcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T17:47:13.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "servicii.cshtml",
+              "DocumentMoniker": "C:\\Users\\alexi\\OneDrive\\Documente\\GitHub\\ProjectDB\\ProjectDB\\Views\\Home\\servicii.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\servicii.cshtml",
+              "ToolTip": "C:\\Users\\alexi\\OneDrive\\Documente\\GitHub\\ProjectDB\\ProjectDB\\Views\\Home\\servicii.cshtml",
+              "RelativeToolTip": "Views\\Home\\servicii.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T17:43:42.553Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
