@@ -9,17 +9,26 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjectDB
 build_property.RootNamespace = ProjectDB
+<<<<<<< HEAD
 build_property.ProjectDir = D:\project_DB\ProjectDB\ProjectDB\
+=======
+build_property.ProjectDir = C:\Users\alexi\OneDrive\Documente\GitHub\ProjectDB\ProjectDB\
+>>>>>>> 82360adb00052585ff960e8e62ebd912de38e78f
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = D:\project_DB\ProjectDB\ProjectDB
+=======
+build_property.MSBuildProjectDirectory = C:\Users\alexi\OneDrive\Documente\GitHub\ProjectDB\ProjectDB
+>>>>>>> 82360adb00052585ff960e8e62ebd912de38e78f
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+<<<<<<< HEAD
 [D:/project_DB/ProjectDB/ProjectDB/Views/Home/despre.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkZXNwcmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -45,5 +54,36 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/project_DB/ProjectDB/ProjectDB/Views/Shared/_Layout.cshtml]
+=======
+[C:/Users/alexi/OneDrive/Documente/GitHub/ProjectDB/ProjectDB/Views/Home/proiecte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwcm9pZWN0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexi/OneDrive/Documente/GitHub/ProjectDB/ProjectDB/Views/Home/servicii.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzZXJ2aWNpaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexi/OneDrive/Documente/GitHub/ProjectDB/ProjectDB/Views/Home/stiri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzdGlyaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexi/OneDrive/Documente/GitHub/ProjectDB/ProjectDB/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexi/OneDrive/Documente/GitHub/ProjectDB/ProjectDB/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexi/OneDrive/Documente/GitHub/ProjectDB/ProjectDB/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexi/OneDrive/Documente/GitHub/ProjectDB/ProjectDB/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexi/OneDrive/Documente/GitHub/ProjectDB/ProjectDB/Views/Shared/_Layout.cshtml]
+>>>>>>> 82360adb00052585ff960e8e62ebd912de38e78f
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z6w7ap7dgt

@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectDB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30548d60fece2b14d98645c477b8a72d1cda79e5")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fac066928ab278fda75942314a16881d3afa9734")]
+>>>>>>> 82360adb00052585ff960e8e62ebd912de38e78f
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectDB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectDB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
