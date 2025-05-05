@@ -1,0 +1,7 @@
+D:\project_DB\ProjectDB\ProjectDB\obj\Release\net9.0\PubTmp\Out\ProjectDB.exe
+D:\project_DB\ProjectDB\ProjectDB\obj\Release\net9.0\PubTmp\Out\appsettings.Development.json
+D:\project_DB\ProjectDB\ProjectDB\obj\Release\net9.0\PubTmp\Out\appsettings.json
+D:\project_DB\ProjectDB\ProjectDB\obj\Release\net9.0\PubTmp\Out\ProjectDB.dll
+D:\project_DB\ProjectDB\ProjectDB\obj\Release\net9.0\PubTmp\Out\ProjectDB.deps.json
+D:\project_DB\ProjectDB\ProjectDB\obj\Release\net9.0\PubTmp\Out\ProjectDB.runtimeconfig.json
+D:\project_DB\ProjectDB\ProjectDB\obj\Release\net9.0\PubTmp\Out\ProjectDB.pdb

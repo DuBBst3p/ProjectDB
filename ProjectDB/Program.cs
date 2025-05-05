@@ -25,5 +25,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+app.UseStaticFiles(); // This is required to serve files from wwwroot
 
 app.Run();

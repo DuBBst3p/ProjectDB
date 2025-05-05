@@ -29,6 +29,7 @@ D:\project_DB\ProjectDB\ProjectDB\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.
 D:\project_DB\ProjectDB\ProjectDB\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
 D:\project_DB\ProjectDB\ProjectDB\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
 D:\project_DB\ProjectDB\ProjectDB\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\project_DB\ProjectDB\ProjectDB\wwwroot\css\style.css
 D:\project_DB\ProjectDB\ProjectDB\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
 D:\project_DB\ProjectDB\ProjectDB\wwwroot\lib\jquery\dist\jquery.min.js
 D:\project_DB\ProjectDB\ProjectDB\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
@@ -61,6 +62,7 @@ D:\project_DB\ProjectDB\ProjectDB\wwwroot\lib\bootstrap\dist\css\bootstrap-reboo
 D:\project_DB\ProjectDB\ProjectDB\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 D:\project_DB\ProjectDB\ProjectDB\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
 wwwroot\css\site.css
+wwwroot\css\style.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
