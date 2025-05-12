@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrimariaCraiova")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bd6ed0c43aaaad701bc84ea1bba4405cc7be350")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrimariaCraiova")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrimariaCraiova")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
