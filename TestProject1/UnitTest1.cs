@@ -188,4 +188,203 @@ namespace Primarie_Craiova.Tests.Controllers
             Assert.Equal("Index", result.ActionName);
         }
     }
+        public class ComplaintsControllerTests
+{
+    private readonly Mock<IComplaintsService> _mockComplaintsService;
+    private readonly Mock<ICitizensService> _mockCitizensService;
+    private readonly ComplaintsController _controller;
+
+    public ComplaintsControllerTests()
+    {
+        _mockComplaintsService = new Mock<IComplaintsService>();
+        _mockCitizensService = new Mock<ICitizensService>();
+
+        _controller = new ComplaintsController(
+            _mockComplaintsService.Object,
+            _mockCitizensService.Object
+        );
+    }
+
+    [Fact]
+    public async Task Index_ReturnsViewWithComplaints()
+    {
+        var complaints = new List<Complaint> { new Complaint { ComplaintID = 1 } };
+        _mockComplaintsService.Setup(s => s.GetAllAsync()).ReturnsAsync(complaints);
+
+        var result = await _controller.Index() as ViewResult;
+
+        Assert.NotNull(result);
+        var model = Assert.IsAssignableFrom<List<Complaint>>(result.Model);
+        Assert.Single(model);
+    }
+
+    [Fact]
+    public async Task Details_ReturnsNotFound_WhenComplaintIsNull()
+    {
+        _mockComplaintsService.Setup(s => s.GetByIdAsync(1)).ReturnsAsync((Complaint)null!);
+
+        var result = await _controller.Details(1);
+
+        Assert.IsType<NotFoundResult>(result);
+    }
+
+    [Fact]
+    public async Task Details_ReturnsView_WhenComplaintExists()
+    {
+        var complaint = new Complaint { ComplaintID = 1 };
+        _mockComplaintsService.Setup(s => s.GetByIdAsync(1)).ReturnsAsync(complaint);
+
+        var result = await _controller.Details(1) as ViewResult;
+
+        Assert.NotNull(result);
+        Assert.Equal(complaint, result.Model);
+    }
+
+    [Fact]
+    public async Task Create_Get_ReturnsViewWithCitizenSelectList()
+    {
+        var citizens = new List<Citizen> { new Citizen { CitizenID = 1, FullName = "Test" } };
+        _mockCitizensService.Setup(s => s.GetAllAsync()).ReturnsAsync(citizens);
+
+        var result = await _controller.Create() as ViewResult;
+
+        Assert.NotNull(result);
+        Assert.True(_controller.ViewData.ContainsKey("CitizenID"));
+    }
+
+    [Fact]
+    public async Task Create_Post_InvalidModel_ReturnsViewWithData()
+    {
+        _controller.ModelState.AddModelError("Title", "Required");
+        var complaint = new Complaint { CitizenID = 1 };
+
+        _mockCitizensService.Setup(s => s.GetAllAsync()).ReturnsAsync(new List<Citizen>());
+
+        var result = await _controller.Create(complaint) as ViewResult;
+
+        Assert.NotNull(result);
+        Assert.Equal(complaint, result.Model);
+    }
+
+    [Fact]
+    public async Task Create_Post_ValidModel_RedirectsToIndex()
+    {
+        var complaint = new Complaint { ComplaintID = 1 };
+
+        var result = await _controller.Create(complaint) as RedirectToActionResult;
+
+        _mockComplaintsService.Verify(s => s.CreateAsync(complaint), Times.Once);
+        Assert.Equal("Index", result.ActionName);
+    }
+
+    [Fact]
+    public async Task Edit_Get_ReturnsNotFound_WhenComplaintIsNull()
+    {
+        _mockComplaintsService.Setup(s => s.GetByIdAsync(1)).ReturnsAsync((Complaint)null!);
+
+        var result = await _controller.Edit(1);
+
+        Assert.IsType<NotFoundResult>(result);
+    }
+
+    [Fact]
+    public async Task Edit_Get_ReturnsViewWithCitizenList()
+    {
+        var complaint = new Complaint { ComplaintID = 1, CitizenID = 2 };
+        var citizens = new List<Citizen> { new Citizen { CitizenID = 2, FullName = "Test" } };
+
+        _mockComplaintsService.Setup(s => s.GetByIdAsync(1)).ReturnsAsync(complaint);
+        _mockCitizensService.Setup(s => s.GetAllAsync()).ReturnsAsync(citizens);
+
+        var result = await _controller.Edit(1) as ViewResult;
+
+        Assert.NotNull(result);
+        Assert.Equal(complaint, result.Model);
+    }
+
+    [Fact]
+    public async Task Edit_Post_IdMismatch_ReturnsNotFound()
+    {
+        var complaint = new Complaint { ComplaintID = 2 };
+
+        var result = await _controller.Edit(1, complaint);
+
+        Assert.IsType<NotFoundResult>(result);
+    }
+
+    [Fact]
+    public async Task Edit_Post_InvalidModel_ReturnsView()
+    {
+        _controller.ModelState.AddModelError("Title", "Required");
+        var complaint = new Complaint { ComplaintID = 1, CitizenID = 1 };
+        _mockCitizensService.Setup(s => s.GetAllAsync()).ReturnsAsync(new List<Citizen>());
+
+        var result = await _controller.Edit(1, complaint);
+
+        Assert.IsType<ViewResult>(result);
+    }
+
+    [Fact]
+    public async Task Edit_Post_FailedUpdate_ReturnsNotFound()
+    {
+        var complaint = new Complaint { ComplaintID = 1 };
+        _mockComplaintsService.Setup(s => s.UpdateAsync(complaint)).ReturnsAsync(false);
+
+        var result = await _controller.Edit(1, complaint);
+
+        Assert.IsType<NotFoundResult>(result);
+    }
+
+    [Fact]
+    public async Task Edit_Post_SuccessfulUpdate_RedirectsToIndex()
+    {
+        var complaint = new Complaint { ComplaintID = 1 };
+        _mockComplaintsService.Setup(s => s.UpdateAsync(complaint)).ReturnsAsync(true);
+
+        var result = await _controller.Edit(1, complaint) as RedirectToActionResult;
+
+        Assert.Equal("Index", result.ActionName);
+    }
+
+    [Fact]
+    public async Task Delete_Get_ReturnsNotFound_WhenComplaintIsNull()
+    {
+        _mockComplaintsService.Setup(s => s.GetByIdAsync(1)).ReturnsAsync((Complaint)null!);
+
+        var result = await _controller.Delete(1);
+
+        Assert.IsType<NotFoundResult>(result);
+    }
+
+    [Fact]
+    public async Task Delete_Get_ReturnsView_WhenComplaintExists()
+    {
+        var complaint = new Complaint { ComplaintID = 1 };
+        _mockComplaintsService.Setup(s => s.GetByIdAsync(1)).ReturnsAsync(complaint);
+
+        var result = await _controller.Delete(1) as ViewResult;
+
+        Assert.Equal(complaint, result.Model);
+    }
+
+    [Fact]
+    public async Task DeleteConfirmed_FailedDeletion_ReturnsNotFound()
+    {
+        _mockComplaintsService.Setup(s => s.DeleteAsync(1)).ReturnsAsync(false);
+
+        var result = await _controller.DeleteConfirmed(1);
+
+        Assert.IsType<NotFoundResult>(result);
+    }
+
+    [Fact]
+    public async Task DeleteConfirmed_SuccessfulDeletion_RedirectsToIndex()
+    {
+        _mockComplaintsService.Setup(s => s.DeleteAsync(1)).ReturnsAsync(true);
+
+        var result = await _controller.DeleteConfirmed(1) as RedirectToActionResult;
+
+        Assert.Equal("Index", result.ActionName);
+    }
+}
 }
