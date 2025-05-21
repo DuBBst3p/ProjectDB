@@ -1,0 +1,347 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+    body[data-theme="dark"] {
+        background-color: #181818;
+        color: #f8f9fa;
+    }
+
+header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body[data-theme="dark"] header {
+    background-color: #002266;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    nav ul li {
+        margin: 10px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+            nav ul li a:hover {
+                color: #ffcc00;
+            }
+
+main {
+    padding: 5%;
+    text-align: center;
+}
+
+.general {
+    background: white;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: auto;
+}
+
+body[data-theme="dark"] .general {
+    background: #282828;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.img1 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid #0044cc;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+body[data-theme="dark"] .img1 {
+    border-color: #ffcc00;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    
+}
+
+body[data-theme="dark"] footer {
+    background-color: transparent;
+}
+
+.container2 {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    max-height: 600px;
+}
+
+body[data-theme="dark"] .container2 {
+    color: #f8f9fa;
+}
+
+.centered_text {
+    font-size: 25px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .general {
+        padding: 8%;
+    }
+
+    .img1 {
+        max-width: 100%;
+    }
+
+    .centered_text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 10%;
+    }
+
+    .general {
+        padding: 10%;
+    }
+
+    .centered_text {
+        font-size: 10px;
+        top: 10%;
+    }
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #000000;
+    color: #ffcc00;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #theme-toggle:hover {
+        background-color: black;
+        transform: scale(1.1);
+    }
+
+body[data-theme="dark"] {
+    background-color: #212529;
+    color: white;
+}
+
+    body[data-theme="dark"] .general {
+        background-color: #333;
+        color: white;
+        box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    body[data-theme="dark"] header{
+        background-color: #000486;
+    }
+
+    body[data-theme="dark"] nav ul li a {
+        color: #ffffff;
+    }
+
+        body[data-theme="dark"] nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+    body[data-theme="dark"] #theme-toggle {
+        background-color: #ffcc00;
+        color: #000;
+    }
+
+        body[data-theme="dark"] #theme-toggle:hover {
+            background-color: #e6b800;
+        }
+
+
+
+@media (max-width: 768px) {
+    #theme-toggle {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #theme-toggle {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+        top: 8px;
+        right: 10px;
+    }
+}
+
+
+
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #2c3e50;
+    --form-bg: #ffffff;
+    --border-color: #ced4da;
+    --btn-bg: #007bff;
+    --btn-hover-bg: #0056b3;
+    --link-color: #007bff;
+    --link-hover: #0056b3;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1e1e1e;
+    --text-color: #f1f1f1;
+    --form-bg: #2c2c2c;
+    --border-color: #555;
+    --btn-bg: #ff9800;
+    --btn-hover-bg: #e68900;
+    --link-color: #ff9800;
+    --link-hover: #e68900;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+h1, h4 {
+    color: var(--text-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    background: var(--form-bg);
+    color: var(--text-color);
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+    .form-control:focus {
+        outline: none;
+        border-color: var(--btn-bg);
+    }
+
+.btn-primary {
+    background-color: var(--btn-bg);
+    border-color: var(--btn-bg);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+    .btn-primary:hover {
+        background-color: var(--btn-hover-bg);
+        border-color: var(--btn-hover-bg);
+    }
+
+.text-danger {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+    a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+    }
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-md-4 {
+    background: var(--form-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+
+
+  

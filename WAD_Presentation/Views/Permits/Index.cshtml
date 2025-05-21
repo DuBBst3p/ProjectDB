@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Permit>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Permits</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssueDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Citizen)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IssueDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Citizen.CitizenID)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PermitID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PermitID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PermitID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

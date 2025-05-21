@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PrimariaMisu\\WAD_Presentation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A99230A6-BC80-4E81-B8E4-1FFBC2BF8DEF}|..\\TestProject1\\TestProject1.csproj|d:\\primariamisu\\testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647B0CA6-AD17-4A0F-A087-F6333896FEA8}|Primarie_Craiova.csproj|d:\\primariamisu\\wad_presentation\\controllers\\citizenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647B0CA6-AD17-4A0F-A087-F6333896FEA8}|Primarie_Craiova.csproj|solutionrelative:controllers\\citizenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647B0CA6-AD17-4A0F-A087-F6333896FEA8}|Primarie_Craiova.csproj|d:\\primariamisu\\wad_presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{647B0CA6-AD17-4A0F-A087-F6333896FEA8}|Primarie_Craiova.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Primarie_Craiova/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CitizensController.cs",
+              "DocumentMoniker": "D:\\PrimariaMisu\\WAD_Presentation\\Controllers\\CitizensController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CitizensController.cs",
+              "ToolTip": "D:\\PrimariaMisu\\WAD_Presentation\\Controllers\\CitizensController.cs",
+              "RelativeToolTip": "Controllers\\CitizensController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAgwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:17:58.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\PrimariaMisu\\TestProject1\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\TestProject1\\UnitTest1.cs",
+              "ToolTip": "D:\\PrimariaMisu\\TestProject1\\UnitTest1.cs",
+              "RelativeToolTip": "..\\TestProject1\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:17:29.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Primarie_Craiova/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-21T17:14:48.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PrimariaMisu\\WAD_Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\PrimariaMisu\\WAD_Presentation\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:55:23.713Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
